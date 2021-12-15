@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #ecf2f8;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1.4rem 0 1.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
+  max-width: 20rem;
+}
+
+.description {
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.wrap-social {
+  position: relative;
+}
+
+.social-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.share-footer {
+  display: none;
+  position: absolute;
+  background-color: #48556a;
+  padding: 1rem 2rem 1rem 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: fadeIn 0.2s ease-in-out;
+          animation: fadeIn 0.2s ease-in-out;
+}
+
+.share-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.share-text {
+  font-size: 0.8rem;
+  color: #9eafc2;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-right: 0.2rem;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.card-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #48556a;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6d7f97;
+}
+
+.profile-name {
+  color: #48556a;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.profile-date {
+  color: #9eafc2;
+}
+
+.profile-picture {
+  width: 2.6rem;
+  border-radius: 50%;
+}
+
+.icon-share, .icon-share--2nd {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  -webkit-transition: fill 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  transition: fill 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+.icon-share {
+  background-color: #ecf2f8;
+  fill: #6d7f97;
+}
+
+.icon-share--2nd {
+  background-color: #6d7f97;
+  fill: #ecf2f8;
+}
+
+.icon-share:hover {
+  cursor: pointer;
+  background-color: #6d7f97;
+  fill: #ecf2f8;
+}
+
+.icon-share--2nd:hover {
+  cursor: pointer;
+  background-color: #ecf2f8;
+  fill: #6d7f97;
+}
+
+.img-cover {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 55em) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    max-width: 60rem;
+  }
+  .card-heading {
+    font-size: 1.4rem;
+  }
+  .img-cover {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+  .description {
+    grid-column: 2/-1;
+    padding-top: 2rem;
+  }
+  .social-footer {
+    padding: 1rem 2rem 1rem 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .wrap-social {
+    grid-column: 2/-1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
